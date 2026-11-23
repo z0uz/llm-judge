@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  llm-judge-scanner:
+    build: .
+    volumes:
+      - ./:/app/output
+    command: ["--config", "/app/output/example_config.yaml"]

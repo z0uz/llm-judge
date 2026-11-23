@@ -1,0 +1,39 @@
+# Virtual environments & caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Packaging & build outputs
+build/
+dist/
+*.egg-info/
+
+# Secrets & environment files (never commit)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials.json
+
+# Generated scan reports & local scratch configs
+*_report.md
+*_report.json
+*_report.sarif
+assessment_report.*
+scan_report.*
+judged_ollama.yaml
+ollama_test_config.yaml
+
+# Editor / OS clutter
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
